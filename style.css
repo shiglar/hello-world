@@ -1,0 +1,123 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+#earth {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#ribbonmain {
+  position: absolute;
+  width: 100%;
+  margin-top: 200px;
+}
+
+#ribbon {
+  display: flex;
+  margin: 0 auto;
+  width: 550px;
+  transform: skew(0deg, -15deg);
+}
+
+.ribbontext {
+  width: 390px;
+  height: 100px;
+  background: black;
+  display: table;
+  margin: 100px auto;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#hellotext {
+  color: white;
+  font-size: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.rightribbon {
+  margin-top: 70px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid black;
+  border-bottom: 40px solid black;
+  border-right: 25px solid transparent;
+  border-left: 50px solid black;
+  border-top-left-radius: 5px;
+}
+
+.leftribbon {
+  margin-top: 150px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid black;
+  border-bottom: 40px solid black;
+  border-right: 50px solid black;
+  border-left: 25px solid transparent;
+  border-bottom-right-radius: 5px;
+}
+
+#video {
+  box-shadow: 5px 5px 50px black;
+  width: 560px;
+  max-width: 100%;
+  height: 315px;
+}
+
+@media screen and (max-width: 550px) {
+  #ribbon {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    transform: skew(0deg, -15deg);
+  }
+
+  .ribbontext {
+    width: 75%;
+    height: 100px;
+    background: black;
+    display: table;
+    margin: 100px auto;
+  }
+
+  #hellotext {
+    color: white;
+    font-size: 40px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .rightribbon {
+    z-index: -999;
+    margin-top: 80px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid black;
+    border-bottom: 40px solid black;
+    border-right: 25px solid transparent;
+    border-left: 30px solid black;
+    border-top-left-radius: 5px;
+  }
+
+  .leftribbon {
+    margin-top: 140px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid black;
+    border-bottom: 40px solid black;
+    border-right: 30px solid black;
+    border-left: 25px solid transparent;
+    border-bottom-right-radius: 5px;
+  }
+}
